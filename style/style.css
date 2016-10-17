@@ -1,0 +1,54 @@
+
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+.main {
+	text-align: left;
+}
+
+h3 {
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.main button {
+	margin: 0 5px;
+	min-width: 150px;
+}
+
+.main h4 {
+	margin: 20px 0;
+}
+
+.why, .main, .delivery, .contacts {
+	border-bottom: 1.5px solid #A0A197;
+	padding-bottom: 20px;
+}
+
+.contacts ul {
+	list-style-type: none;
+	margin-left: -50px;
+}
+
+/* .why {
+	background-color: #73BFBE;
+}
+
+.main {
+	background-color: #D1B94D  ;
+}
+
+.delivery {
+	background-color: #A2D14D ;
+}
+
+.contacts {
+	background-color: #96BF73 ;
+} */
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}

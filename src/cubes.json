@@ -1,0 +1,217 @@
+export const cubes = {
+	"3x3": [
+		{
+	      "name": "Dayan 5",
+	      "price": "13"
+	    },
+	    {
+	      "name": "Dayan 3v2",
+	      "price": "12"
+	    },
+	    {
+	      "name": "Dayan 5 50mm",
+	      "price": "10"
+	    },
+	    {
+	      "name": "Dayan 5 42mm",
+	      "price": "9"
+	    },
+	    {
+	      "name": "Fangshi v2 57mm",
+	      "price": "12"
+	    },
+	    {
+	      "name": "Maru CX3 57mm + подставка и пружинки ",
+	      "price": "12"
+	    },
+	    {
+	      "name": "MoYu Aolong v1 55mm",
+	      "price": "13"
+	    },
+	    {
+	      "name": "MoYu GuanLong 57mm",
+	      "price": "5"
+	    },
+	    {
+	      "name": "Shengshou",
+	      "price": "4"
+	    },
+	    {
+	      "name": "Обычный 3х3",
+	      "price": "1"
+	    }
+	],
+	"2x2": [
+		{
+	      "name": "Dayan 50mm",
+	      "price": "12"
+	    },
+	    {
+	      "name": "WitTwo v1",
+	      "price": "10"
+	    },
+	    {
+	      "name": "WitTwo v2",
+	      "price": "11"
+	    },
+	    {
+	      "name": "Lan Lan",
+	      "price": "5"
+	    }
+	],
+	"big": [
+		{
+	      "name": "MoYu 5x5",
+	      "price": "20"
+	    },
+	    {
+	      "name": "MoYu 6x6",
+	      "price": "30"
+	    },
+	    {
+	      "name": "Shengshou 7x7 (mini/standart)",
+	      "price": "20"
+	    },
+	    {
+	      "name": "MoYu 7x7 AoFu",
+	      "price": "35"
+	    },
+	    {
+	      "name": "Shengshou 9x9",
+	      "price": "55"
+	    }
+	],
+	"others": [
+		{
+	      "name": "Mirror Block Shengshou",
+	      "price": "7"
+	    },
+	    {
+	      "name": "Skewb MoYu",
+	      "price": "8"
+	    },
+	    {
+	      "name": "Skewb LanLan",
+	      "price": "7.25"
+	    },
+	    {
+	      "name": "Void Cube LanLan",
+	      "price": "8.5"
+	    },
+	    {
+	      "name": "Apple YJ",
+	      "price": "8"
+	    },
+	    {
+	      "name": "Master Pyraminx YJ",
+	      "price": "9"
+	    },
+	    {
+	      "name": "Dino Cube",
+	      "price": "10"
+	    },
+	    {
+	      "name": "Helicopter Cube",
+	      "price": "13"
+	    }
+	]
+};
+
+export const stickers = {
+	"flu": [
+		{
+	      "name": "2x2",
+	      "price": "0.8"
+	    },
+	    {
+	      "name": "3x3 (55/57mm)",
+	      "price": "0.9"
+	    },
+	    {
+	      "name": "5x5",
+	      "price": "1.5"
+	    },
+	    {
+	      "name": "6x6",
+	      "price": "1.7"
+	    },
+	    {
+	      "name": "7х7 (mini/standart)",
+	      "price": "2"
+	    },
+	    {
+	      "name": "Skewb",
+	      "price": "1"
+	    },
+	    {
+	      "name": "Mirror Block",
+	      "price": "1"
+	    }
+	],
+
+	"usial": [
+		{
+	      "name": "2х2",
+	      "price": "0.1"
+	    },
+	    {
+	      "name": "3х3",
+	      "price": "0.1"
+	    },
+	    {
+	      "name": "3х3 42mm",
+	      "price": "0.1"
+	    },
+	    {
+	      "name": "7x7 (mini/standart)",
+	      "price": "1"
+	    }
+	],
+
+	"logo": [
+		{
+	      "name": "Лого Dayan",
+	      "price": "0.2"
+	    },
+	    {
+	      "name": "Лого другие",
+	      "price": "0.5"
+	    }
+	]
+};
+
+export const other = {
+	"oil": [
+		{
+	      "name": "Maru",
+	      "price": "3"
+	    },
+	    {
+	      "name": "Maru Blue",
+	      "price": "6"
+	    }
+	],
+
+	"other": [
+		{
+	      "name": "Бархатный мешочек",
+	      "price": "1"
+	    },
+	    {
+	      "name": "Пластиковая коробка 57mm",
+	      "price": "1.25"
+	    },
+	    {
+	      "name": "Подставка",
+	      "price": "0.5"
+	    },
+	    {
+	      "name": "Таймер Qj v3",
+	      "price": "11"
+	    },
+	    {
+	      "name": "Отвертка MoYu (няшная)",
+	      "price": "0.5"
+	    }
+	]
+}
