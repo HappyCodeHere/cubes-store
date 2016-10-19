@@ -59,7 +59,7 @@ export const cubes = {
 	      "price": "5"
 	    }
 	],
-	"big": [
+	"Большие": [
 		{
 	      "name": "MoYu 5x5",
 	      "price": "20"
@@ -81,10 +81,10 @@ export const cubes = {
 	      "price": "55"
 	    }
 	],
-	"others": [
+	"Остальные": [
 		{
-	      "name": "Mirror Block Shengshou",
-	      "price": "7"
+	      "name": "Mirror Block Shengshou (зеркальный)",
+	      "price": "10"
 	    },
 	    {
 	      "name": "Skewb MoYu",
@@ -118,7 +118,7 @@ export const cubes = {
 };
 
 export const stickers = {
-	"flu": [
+	"Флуоресцентные (яркие)": [
 		{
 	      "name": "2x2",
 	      "price": "0.8"
@@ -149,7 +149,7 @@ export const stickers = {
 	    }
 	],
 
-	"usial": [
+	"Обычные": [
 		{
 	      "name": "2х2",
 	      "price": "0.1"
@@ -168,7 +168,7 @@ export const stickers = {
 	    }
 	],
 
-	"logo": [
+	"Лого": [
 		{
 	      "name": "Лого Dayan",
 	      "price": "0.2"
@@ -181,7 +181,7 @@ export const stickers = {
 };
 
 export const other = {
-	"oil": [
+	"Смазка": [
 		{
 	      "name": "Maru",
 	      "price": "3"
@@ -192,7 +192,7 @@ export const other = {
 	    }
 	],
 
-	"other": [
+	"Остальное": [
 		{
 	      "name": "Бархатный мешочек",
 	      "price": "1"
@@ -210,7 +210,7 @@ export const other = {
 	      "price": "11"
 	    },
 	    {
-	      "name": "Отвертка MoYu (няшная)",
+	      "name": "Отвертка MoYu",
 	      "price": "0.5"
 	    }
 	]

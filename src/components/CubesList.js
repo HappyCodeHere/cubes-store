@@ -32,22 +32,28 @@ class CubesList extends Component {
 
 	render() {
 		let list = Object.keys(cubes).map(item => {
-			return cubes[item].map(item2 => {
-				console.log(item2);
-				return <CubesItem name={item2.name} price={item2.price}/>
-			})
+			return <div className="animation"> 
+				<h5> {item} </h5>
+				{cubes[item].map(item2 => {
+					return <CubesItem name={item2.name} price={item2.price}/>
+				})}
+			</div>
 		})
 		let list2 = Object.keys(stickers).map(item => {
-			return stickers[item].map(item2 => {
-				console.log(item2);
-				return <CubesItem name={item2.name} price={item2.price}/>
-			})
+			return <div className="animation">
+				<h5> {item} </h5>
+				{stickers[item].map(item2 => {
+					return <CubesItem name={item2.name} price={item2.price}/>
+				})}
+			</div>
 		})
 		let list3 = Object.keys(other).map(item => {
-			return other[item].map(item2 => {
-				console.log(item2);
-				return <CubesItem name={item2.name} price={item2.price}/>
-			})
+			return <div className="animation"> 
+				<h5> {item} </h5>
+				{other[item].map(item2 => {
+					return <CubesItem name={item2.name} price={item2.price}/>
+				})}
+			</div>
 		})
 		console.log(cubes, stickers, other);
 		return (

@@ -8,9 +8,14 @@
 	text-align: left;
 }
 
+h2 {
+	font-weight: bold;
+}
+
 h3 {
 	font-weight: bold;
 	margin: 20px 0;
+	text-transform: uppercase;
 }
 
 .main button {
@@ -22,7 +27,11 @@ h3 {
 	margin: 20px 0;
 }
 
-.why, .main, .delivery, .contacts {
+.main h5 {
+	margin: 10px 0;
+}
+
+.why, .info, .main, .delivery, .contacts {
 	border-bottom: 1.5px solid #A0A197;
 	padding-bottom: 20px;
 }
@@ -51,4 +60,37 @@ h3 {
 .buttons {
 	display: flex;
 	justify-content: center;
+}
+
+::selection {
+    background-color: #72E48A;
+    color: #fff;
+}
+
+
+/* The animation code */
+@keyframes example {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* The element to apply the animation to */
+.animatio {
+    animation-name: example;
+    animation-duration: 1.5s;
+}
+
+.text {
+	display: flex;
+
+}
+
+.text img {
+	height: 200px;
+	width: 400px;
+}
+
+.text p {
+	text-align: left;
+	margin-left: 20px;
 }
