@@ -1,63 +1,77 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 import CubesItem from './CubesItem.js';
 import { cubes, stickers, other } from '../cubes.json';
 
 class CubesList extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 
 		this.state = {
-			isCubesActive: true,
-			isStickersActive: false,
-			isOthersActive: false
+			currentActive: this.props.selectButtonData
 		}
 
 		this.handleButtonCubesClick = this.handleButtonCubesClick.bind(this);
 		this.handleButtonStickersClick = this.handleButtonStickersClick.bind(this);
 		this.handleButtonOthersClick = this.handleButtonOthersClick.bind(this);
+
+		this.renderList = this.renderList.bind(this);
 	}
 
 	handleButtonCubesClick() {
-		this.setState({ isCubesActive: true, isStickersActive: false, isOthersActive: false })
+		this.setState({ currentActive: "Кубики" });
+		this.props.selectButton("Кубики");
 	}
 
 	handleButtonStickersClick() {
-		this.setState({ isCubesActive: false, isStickersActive: true, isOthersActive: false })
+		this.setState({ currentActive: "Наклейки" });
+		this.props.selectButton("Наклейки");
 	}
 
 	handleButtonOthersClick() {
-		this.setState({ isCubesActive: false, isStickersActive: false, isOthersActive: true })
+		this.setState({ currentActive: "Остальное" });
+		this.props.selectButton("Остальное");
+	}
+
+	renderList() {
+		let data;
+
+
+		switch (this.state.currentActive) {
+			case "Кубики":
+				data = cubes;
+				break;
+			case "Наклейки":
+				data = stickers;
+				break;
+			case "Остальное":
+				data = other;
+				break;
+
+			default:
+				data = cubes;
+		}
+
+		let list = Object.keys(data).map((item, i) => {
+			return <div key={i}> 
+				<h5> {item} </h5>
+				{data[item].map((item2, i) => {
+					let url = item2.name;
+					while(url.indexOf(' ') > 0) {
+						url = url.replace(' ', '_');
+					}
+					return <Link to={url}><CubesItem key={i} name={item2.name} price={item2.price}/></Link>
+				})}
+			</div>
+		})
+
+		return list;
 	}
 
 	render() {
-		let list = Object.keys(cubes).map(item => {
-			return <div className="animation"> 
-				<h5> {item} </h5>
-				{cubes[item].map(item2 => {
-					return <CubesItem name={item2.name} price={item2.price}/>
-				})}
-			</div>
-		})
-		let list2 = Object.keys(stickers).map(item => {
-			return <div className="animation">
-				<h5> {item} </h5>
-				{stickers[item].map(item2 => {
-					return <CubesItem name={item2.name} price={item2.price}/>
-				})}
-			</div>
-		})
-		let list3 = Object.keys(other).map(item => {
-			return <div className="animation"> 
-				<h5> {item} </h5>
-				{other[item].map(item2 => {
-					return <CubesItem name={item2.name} price={item2.price}/>
-				})}
-			</div>
-		})
-		console.log(cubes, stickers, other);
+
 		return (
-			
 			<div className="cubes-list">
 				<h3> Что мы предлагаем </h3>
 				<div className="buttons">
@@ -65,10 +79,9 @@ class CubesList extends Component {
 					<button className="btn btn-danger" onClick={this.handleButtonStickersClick}> Наклейки </button>
 					<button className="btn btn-info" onClick={this.handleButtonOthersClick}> Остальное </button>
 				</div>
-				<h4>{this.state.isCubesActive ? "Кубики" : this.state.isStickersActive ? "Наклейки" : this.state.isOthersActive ? "Остальное" : null} </h4>
-					{ this.state.isCubesActive ? list : null}
-					{this.state.isStickersActive ? list2 : null}
-					{this.state.isOthersActive ? list3 : null}
+				<h4>{this.state.currentActive}</h4>
+
+				{this.renderList()}
 			</div>
 		)
 	}

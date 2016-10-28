@@ -1,11 +1,14 @@
 import React from 'react';
 
 const CubesItem = (props) => {
-	console.log(props.price % 1);
+	const { name, price } = props;
+	let newPrice = +(price);
+	if (newPrice % 1 > 0) {
+		newPrice = newPrice.toFixed(2);
+	}
 	return (
-		<div>
-			{props.name + ' '} — 
-			{' ' + (+props.price) % 1 > 0 ? (+props.price).toFixed(2) : (+props.price) }$
+		<div className="cubes-item">
+			{`${name} — ${newPrice}$ / ${newPrice * 19000} руб.`}
 		</div>
 	)
 }

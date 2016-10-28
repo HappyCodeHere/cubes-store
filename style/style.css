@@ -1,11 +1,8 @@
+@import './mainCSS.css';
 
-* {
+body {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: center;
-}
-
-.main {
-	text-align: left;
 }
 
 h2 {
@@ -14,26 +11,41 @@ h2 {
 
 h3 {
 	font-weight: bold;
-	margin: 20px 0;
 	text-transform: uppercase;
-}
-
-.main button {
-	margin: 0 5px;
-	min-width: 150px;
-}
-
-.main h4 {
 	margin: 20px 0;
-}
-
-.main h5 {
-	margin: 10px 0;
 }
 
 .why, .info, .main, .delivery, .contacts {
 	border-bottom: 1.5px solid #A0A197;
-	padding-bottom: 20px;
+	padding: 20px 50px;
+}
+
+.text {
+	display: flex;
+}
+
+.info h4 {
+	font-family: cursive;
+	margin-top: 30px;
+}
+
+.info img {
+	height: 200px;
+	width: 30%;
+}
+
+.info > div {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.text p {
+	width: 70%;
+	margin-left: 20px;
+	text-align: justify;
+	text-indent: 30px;
 }
 
 .contacts ul {
@@ -41,32 +53,18 @@ h3 {
 	margin-left: -50px;
 }
 
-/* .why {
-	background-color: #73BFBE;
-}
 
-.main {
-	background-color: #D1B94D  ;
-}
 
-.delivery {
-	background-color: #A2D14D ;
-}
 
-.contacts {
-	background-color: #96BF73 ;
-} */
 
-.buttons {
-	display: flex;
-	justify-content: center;
-}
+
+
+
 
 ::selection {
     background-color: #72E48A;
     color: #fff;
 }
-
 
 /* The animation code */
 @keyframes example {
@@ -78,19 +76,4 @@ h3 {
 .animatio {
     animation-name: example;
     animation-duration: 1.5s;
-}
-
-.text {
-	display: flex;
-
-}
-
-.text img {
-	height: 200px;
-	width: 400px;
-}
-
-.text p {
-	text-align: left;
-	margin-left: 20px;
 }
