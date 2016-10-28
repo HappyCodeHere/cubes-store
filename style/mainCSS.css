@@ -1,0 +1,77 @@
+.main h4 {
+	margin: 20px 0;
+}
+
+.main h5 {
+	margin: 10px 0;
+}
+
+.main .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.main .buttons button {
+	margin: 0 5px;
+	min-width: 150px;
+}
+
+.main .cubes-list > div > a {
+	display: block;
+	/* text-decoration: none; */
+	/* margin: 1px 0px; */
+}
+
+.main .cubes-list > div > a:hover {
+	color: orange;
+	font-weight: bold;
+	/* font-size: 104%; */
+}
+
+/* .main a:hover { */
+/* 	border-bottom: 1px red solid !important; */
+	/* color: pink; */
+
+/* }
+
+.cubes-item {
+	display: flex;
+	border: 1px yellow solid;
+}
+
+.cubes-item:hover {
+	border-bottom: 1px orange solid;
+} */
+
+.cubes-info .cubes-info-main {
+	display: flex;
+
+}
+
+.cubes-info img {
+	height: 200px;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px gray;
+}
+
+.cubes-info-main p {
+	/* display: block; */
+	width: 70%;
+	text-align: justify;
+	margin-left: 20px;
+	text-indent: 30px;
+}
+
+
+
+
+.cubes-info .cubes-info-buttons p {
+
+
+}
+
+.cubes-info-buttons a {
+	margin: 30px 10px;
+	min-width: 200px;
+}
