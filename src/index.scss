@@ -1,0 +1,86 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-size: 40px !important;
+}
+
+.jumbotron h2 {
+	font-size: 35px !important;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.why, .info, .main, .delivery, .contacts {
+	border-bottom: 1.5px solid #A0A197;
+	padding: 20px 50px;
+}
+
+.text {
+	display: flex;
+}
+
+.info h4 {
+	font-family: cursive;
+	margin-top: 30px;
+}
+
+.info img {
+	height: 200px;
+	width: 30%;
+}
+
+.info > div {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.text p {
+	width: 70%;
+	margin-left: 20px;
+	text-align: justify;
+	text-indent: 30px;
+	font-size: 20px;
+}
+
+.contacts ul {
+	list-style-type: none;
+	margin-left: -50px;
+}
+
+
+
+
+
+
+
+
+
+::selection {
+    background-color: #72E48A;
+    color: #fff;
+}
+
+/* The animation code */
+@keyframes example {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* The element to apply the animation to */
+.animatio {
+    animation-name: example;
+    animation-duration: 1.5s;
+}

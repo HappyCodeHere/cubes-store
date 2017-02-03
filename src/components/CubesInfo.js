@@ -1,14 +1,33 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-import { cubes, stickers, other } from '../cubes.json';
+import ContactForm from './ContactForm';
+
+import { cubes, stickers, other } from '../cubes.js';
 
 class CubesInfo extends Component {
+	constructor() {
+		super();
+
+		this.state = {
+			isShowNumberForm: false,
+		}
+
+		this.handleButtonOrderClick = this.handleButtonOrderClick.bind(this);
+
+	}
+
+
 
 	componentWillMount() {
 		Object.keys(cubes).map(item =>{
-			return 
+			return
 		})
+
+	}
+
+	handleButtonOrderClick() {
+		this.setState({isShowNumberForm: !this.state.isShowNumberForm});
 
 	}
 
@@ -18,7 +37,7 @@ class CubesInfo extends Component {
 			url = url.replace('_', ' ');
 		}
 
-		console.log(this.props.params.id);
+		// console.log(this.props.params.id);
 		let fullName, price, description, images;
 		let all = [cubes, stickers, other];
 		all.map(item0 => {
@@ -36,8 +55,10 @@ class CubesInfo extends Component {
 				description = item2.description;
 				images = item2.images;
 
+
+
 				return;
-			}	
+			}
 			})
 		})
 
@@ -51,8 +72,10 @@ class CubesInfo extends Component {
 				</div>
 
 				<div className="cubes-info-buttons">
-					<Link to="/#contacts" className="btn btn-info"> Заказать! </Link>
+					<button className="btn btn-info" onClick={this.handleButtonOrderClick}> Заказать! </button>
+
 					<Link to="/" className="btn btn-danger"> Вернуться назад </Link>
+					{this.state.isShowNumberForm ? <ContactForm /> : null}
 				</div>
 			</div>
 		)

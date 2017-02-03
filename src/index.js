@@ -9,6 +9,8 @@ import App from './components/App.js';
 import CubesList from './components/CubesList.js';
 import CubesInfo from './components/CubesInfo.js';
 
+import './index.scss';
+
 import reducers from './reducers';
 
 import thunk from 'redux-thunk';
@@ -34,7 +36,7 @@ ReactDOM.render(
 		<Route path=":id" component={CubesInfo} />
     </Router>
   </Provider>
-  , document.querySelector('.main2'));
+  , document.querySelector('#root'));
 
 /*ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>

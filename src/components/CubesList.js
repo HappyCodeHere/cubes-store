@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import CubesItem from './CubesItem.js';
-import { cubes, stickers, other } from '../cubes.json';
+import { cubes, stickers, other } from '../cubes.js';
 
 class CubesList extends Component {
 	constructor(props) {
@@ -54,14 +54,14 @@ class CubesList extends Component {
 		}
 
 		let list = Object.keys(data).map((item, i) => {
-			return <div key={i}> 
+			return <div key={i}>
 				<h5> {item} </h5>
 				{data[item].map((item2, i) => {
 					let url = item2.name;
 					while(url.indexOf(' ') > 0) {
 						url = url.replace(' ', '_');
 					}
-					return <Link to={url}><CubesItem key={i} name={item2.name} price={item2.price}/></Link>
+					return <Link key={i} to={url}><CubesItem name={item2.name} price={item2.price}/></Link>
 				})}
 			</div>
 		})

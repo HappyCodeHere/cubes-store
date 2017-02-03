@@ -1,0 +1,112 @@
+.main h4 {
+	margin: 20px 0;
+	font-size: 22px;
+}
+
+.main h5 {
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+.main .buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.main .buttons button {
+	margin: 0 5px;
+	min-width: 150px;
+}
+
+.main .cubes-info button {
+	margin: 0 5px;
+	min-width: 200px;
+}
+
+.main .cubes-list > div > a {
+	display: block;
+	/* text-decoration: none; */
+	/* margin: 1px 0px; */
+	font-size: 15px;
+}
+
+.main .cubes-list > div > a:hover {
+	color: orange;
+	font-weight: bold;
+	/* font-size: 104%; */
+}
+
+/* .main a:hover { */
+/* 	border-bottom: 1px red solid !important; */
+	/* color: pink; */
+
+/* }
+
+.cubes-item {
+	display: flex;
+	border: 1px yellow solid;
+}
+
+.cubes-item:hover {
+	border-bottom: 1px orange solid;
+} */
+
+.cubes-info .cubes-info-main {
+	display: flex;
+
+}
+
+.cubes-info img {
+	height: 200px;
+	width: 300px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px gray;
+}
+
+.cubes-info-main p {
+	/* display: block; */
+	width: 70%;
+	text-align: justify;
+	margin-left: 20px;
+	text-indent: 30px;
+	font-size: 14px;
+}
+
+
+
+
+.cubes-info .cubes-info-buttons p {
+
+
+}
+
+.cubes-info-buttons a {
+	margin: 30px 10px;
+	min-width: 200px;
+}
+
+
+
+.contact-form {
+	margin: 0 auto;
+	width: 40%;
+	// box-shadow: 1px 1px 0 0 gray;
+
+	textarea {
+		margin-bottom: 20px;
+	}
+
+	button {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		// min-width: 150px !important;
+	}
+
+
+}
+
+.main .cubes-info .contact-form button {
+	// color: red;
+	// width: 100px !important;
+	// height: 20px;
+}

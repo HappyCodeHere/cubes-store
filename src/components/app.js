@@ -5,6 +5,8 @@ import CubesList from './CubesList.js';
 import { connect } from 'react-redux';
 import { selectButton } from '../actions/index.js';
 
+import './App.scss';
+
  class App extends Component {
   render() {
   	const { ...rest } = this.props;
