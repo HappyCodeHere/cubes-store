@@ -38,7 +38,7 @@ class ContactForm extends Component {
 		// console.log(decodeURIComponent(secondLevelLocation));
 
 		this.props.phoneSend(this.state.number, this.state.text, decodeURIComponent(secondLevelLocation));
-		toastr.success( 'Телефон отправлен', 'Мы перезвоним в ближайшее время!');
+		toastr.success( 'Мы перезвоним в ближайшее время! Но если что звони сам;)', 'Телефон отправлен');
 		setTimeout( () => { browserHistory.push('/') }, 2000);
 	}
 

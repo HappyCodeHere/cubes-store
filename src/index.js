@@ -9,22 +9,19 @@ import App from './components/App.js';
 import CubesList from './components/CubesList.js';
 import CubesInfo from './components/CubesInfo.js';
 
-import './index.scss';
+import './index.css';
 
 import reducers from './reducers';
 
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 
+import registerServiceWorker from './registerServiceWorker';
+
+
 const logger = createLogger();
 
 const createStoreWithMiddleware = applyMiddleware(logger, thunk)(createStore);
-
-
-
-
-
-
 
 
 ReactDOM.render(
@@ -38,6 +35,7 @@ ReactDOM.render(
   </Provider>
   , document.querySelector('#root'));
 
+registerServiceWorker();
 /*ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <ContactForm />

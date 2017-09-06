@@ -2,13 +2,12 @@ import React from 'react';
 
 const CubesItem = (props) => {
 	const { name, price } = props;
-	let newPrice = +(price);
-	if (newPrice % 1 > 0) {
-		newPrice = newPrice.toFixed(2);
-	}
+	const newPrice = +(price);
 	return (
 		<div className="cubes-item">
-			{`${name} — ${newPrice}$ / ${newPrice * 19000} руб.`}
+			{ newPrice === 0 ? <span>{name} — <span className="free">Бесплатно</span> </span> :
+			`${name} — ${newPrice}$ / ${(newPrice * 2)} руб.`
+		}
 		</div>
 	)
 }

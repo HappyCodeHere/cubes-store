@@ -11,10 +11,15 @@
 .main .buttons {
 	display: flex;
 	justify-content: center;
+
+
+	@media (max-width: 900px) {
+		flex-direction: column;
+	}
 }
 
 .main .buttons button {
-	margin: 0 5px;
+	margin: 5px 5px;
 	min-width: 150px;
 }
 
@@ -54,13 +59,17 @@
 .cubes-info .cubes-info-main {
 	display: flex;
 
+	@media (max-width: 800px) {
+		flex-direction: column;
+	}
 }
 
 .cubes-info img {
 	height: 200px;
-	width: 300px;
-	border-radius: 5px;
-	box-shadow: 3px 3px 5px gray;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 3px;
+	// box-shadow: 3px 3px 5px gray;
 }
 
 .cubes-info-main p {
@@ -70,9 +79,16 @@
 	margin-left: 20px;
 	text-indent: 30px;
 	font-size: 14px;
+
+	@media (max-width: 800px) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+		margin-left: 0px;
+		text-align: center;
+		text-indent: 0px;
+	}
 }
-
-
 
 
 .cubes-info .cubes-info-buttons p {
@@ -90,6 +106,10 @@
 .contact-form {
 	margin: 0 auto;
 	width: 40%;
+
+	@media (max-width: 800px) {
+		width: 100%;
+	}
 	// box-shadow: 1px 1px 0 0 gray;
 
 	textarea {
@@ -103,6 +123,10 @@
 	}
 
 
+}
+
+.free {
+	color: red;
 }
 
 .main .cubes-info .contact-form button {
