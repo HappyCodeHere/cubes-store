@@ -65,7 +65,7 @@ class CubesInfo extends Component {
 		})
 		return (
 			<div className="cubes-info">
-				<h3> {fullName} — {price}$ / {price * 19000} руб. </h3>
+				<h3> {fullName} — {price}$ / {price * 2} руб. </h3>
 				<div className="cubes-info-main">
 					<img src={images} />
 					<p> {description} </p>
