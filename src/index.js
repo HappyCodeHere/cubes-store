@@ -16,7 +16,7 @@ import reducers from './reducers';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker, { unregister } from './registerServiceWorker';
 
 
 const logger = createLogger();
@@ -35,7 +35,9 @@ ReactDOM.render(
   </Provider>
   , document.querySelector('#root'));
 
-registerServiceWorker();
+// registerServiceWorker();
+unregister();
+
 /*ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <ContactForm />
